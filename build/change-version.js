@@ -65,6 +65,7 @@ async function main(args) {
   }
 
   // Strip any leading `v` from arguments because otherwise we will end up with duplicate `v`s
+  //Are you sure
   [oldVersion, newVersion] = [oldVersion, newVersion].map(arg => arg.startsWith('v') ? arg.slice(1) : arg)
 
   try {
